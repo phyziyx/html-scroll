@@ -10,5 +10,5 @@ scroller.addEventListener("scroll", (event) => {
 	const scrollThreshold = 30 / 100;
 	const upCheck = clientHeight * scrollThreshold;
 	
-	output.textContent = `scrollTop: ${scrollTop} /// clientHeight: ${clientHeight} /// scrollHeight: ${scrollHeight} /// Half: ${scrollHeightHalf} /// scrollBottom: ${scrollBottom} /// upCheck: ${upCheck} /// scrolledUp: ${scrollBottom > upCheck}`;
+	output.textContent = `scrollTop: ${scrollTop} /// clientHeight: ${clientHeight} /// scrollHeight: ${scrollHeight} /// Half: ${scrollHeightHalf} /// scrollBottom: ${scrollBottom} /// upCheck: ${upCheck} /// scrolledUp: ${scrollBottom > upCheck} // scrollPercentage: ${Math.floor(scrollTop / (scroller.scrollHeight - scroller.clientHeight) * 100)}%`;
 });
